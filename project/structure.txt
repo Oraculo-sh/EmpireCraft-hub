@@ -1,3 +1,4 @@
+C:.
 │   .env.example
 │   .gitignore
 │   docker-compose.yml
@@ -13,12 +14,10 @@
 ├───apps
 │   ├───backend
 │   │   │   .env.example
-│   │   │   app.module.ts
 │   │   │   Dockerfile
-│   │   │   main.ts
 │   │   │   package.json
 │   │   │   tsconfig.json
-│   │   │
+│   │   │   
 │   │   ├───prisma
 │   │   │   │   schema.prisma
 │   │   │   │   seed.ts
@@ -108,9 +107,12 @@
 │                   │       ParticipantList.tsx
 │                   │
 │                   └───pages
+│                           CoinsPage.tsx
+│                           ConfigPage.tsx
+│                           ProfilePage.tsx
+│                           StorePage.tsx
+│
 └───packages
-    │   package.json
-    │
     └───shared-types
         │   package.json
         │   tsconfig.json
