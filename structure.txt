@@ -1,0 +1,122 @@
+│   .env.example
+│   .gitignore
+│   docker-compose.yml
+│   LICENSE
+│   package.json
+│   pnpm-workspace.yaml
+│   README.md
+│   structure.txt
+│   tsconfig.base.json
+│   
+├───.github
+├───.vscode
+├───apps
+│   ├───backend
+│   │   │   .env.example
+│   │   │   app.module.ts
+│   │   │   Dockerfile
+│   │   │   main.ts
+│   │   │   package.json
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───prisma
+│   │   │   │   schema.prisma
+│   │   │   │   seed.ts
+│   │   │   │
+│   │   │   └───migrations
+│   │   └───src
+│   │       │   app.module.ts
+│   │       │   main.ts
+│   │       │
+│   │       ├───auth
+│   │       │       auth.module.ts
+│   │       │
+│   │       ├───core
+│   │       ├───game-catalog
+│   │       │       game-catalog.module.ts
+│   │       │
+│   │       ├───game-modules
+│   │       │   ├───capital-city
+│   │       │   │       capital-city.service.ts
+│   │       │   │       capital-city.types.ts
+│   │       │   │
+│   │       │   ├───damas
+│   │       │   └───mystery-mansion
+│   │       │           mystery-mansion.service.ts
+│   │       │           mystery-mansion.types.ts
+│   │       │
+│   │       ├───lobby
+│   │       │       lobby.module.ts
+│   │       │
+│   │       ├───monetization
+│   │       │       monetization.module.ts
+│   │       │
+│   │       ├───store
+│   │       │       store.module.ts
+│   │       │
+│   │       └───user
+│   │               user.module.ts
+│   │
+│   └───frontend
+│       │   .env.example
+│       │   Dockerfile
+│       │   index.html
+│       │   package.json
+│       │   tsconfig.json
+│       │
+│       ├───public
+│       └───src
+│           │   App.tsx
+│           │   main.tsx
+│           │
+│           ├───components
+│           │   └───ui
+│           ├───hooks
+│           │       useLobbyState.ts
+│           │
+│           ├───services
+│           │       api.service.ts
+│           │       discord.sdk.ts
+│           │       socket.service.ts
+│           │
+│           ├───store
+│           │       useLobbyStore.ts
+│           │       useUserStore.ts
+│           │
+│           ├───styles
+│           └───views
+│               ├───MainView
+│               │   │   GameLobby.tsx
+│               │   │   GameSelection.tsx
+│               │   │   MainView.tsx
+│               │   │
+│               │   └───game_modules
+│               │       ├───capital-city
+│               │       │       CapitalCityBoard.tsx
+│               │       │       CapitalCityPrivateUI.tsx
+│               │       │
+│               │       └───mystery-mansion
+│               │               MysteryMansionBoard.tsx
+│               │               MysteryMansionPrivateUI.tsx
+│               │
+│               └───SidebarView
+│                   │   SidebarView.tsx
+│                   │
+│                   ├───components
+│                   │       MiniChat.tsx
+│                   │       NavBar.tsx
+│                   │       ParticipantList.tsx
+│                   │
+│                   └───pages
+└───packages
+    │   package.json
+    │
+    └───shared-types
+        │   package.json
+        │   tsconfig.json
+        │
+        └───src
+                api.types.ts
+                db.types.ts
+                game.types.ts
+                index.ts
